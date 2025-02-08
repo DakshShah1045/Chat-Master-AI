@@ -1,7 +1,7 @@
 /* Glass Effect */
 /* Background Image */
 body {
-  background: url('cityscape.png') no-repeat center center/cover;
+  background: url('CITYSCAPE.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
