@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Byte Tech Labs</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Byte Tech Labs</h1>
+    <nav>
+      <a href="https://github.com/DakshShah1045" class="nav-btn">Github</a>
+      <a href="https://dakshshah1045.github.io/Portfolio/" class="nav-btn">Website</a>
+      <a href="https://youtube.com/@dakshshah449" class="nav-btn">Youtube</a>
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Sign-In Container -->
+  <div class="signin-container">
+    <h2>Sign In</h2>
+    <form class="signin-form">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="signin-btn">Sign In</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+               <p>&copy; 2025 Byte Tech Labs <br><br>
+  
+  </footer>
+<script src="signup.js"></script>
+  <script>
+    function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
+  </script>
+
+</body>
+</html>

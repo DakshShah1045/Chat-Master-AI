@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatMaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>ChatMaster</h1>
+    <nav>
+      <button class="nav-btn" >Home</button>
+      <button class="nav-btn" onclick="window.location.href='pricing.html'">Pricing</button>
+      <button class="nav-btn" onclick="window.location.href = 'about.html'">About</button>
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Chat Section -->
+  <div class="chat-container">
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Ask something..." />
+      <button class="send-btn" onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Byte Tech Labs <br><br>
+      <h4>Daksh Shah (Co-Founder And CEO)<br>
+    Likesh Sanghvi (Co-Founder And CFO)</h4>
+  In Partnership With Google</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
