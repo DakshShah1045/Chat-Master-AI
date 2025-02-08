@@ -2,7 +2,8 @@
 const validUsers = [
   { username: "daksh_shah", password: "daksh20116" },
   { username: "Byte_Tech_Labs", password: "btl_secured_1045" },
-  { username: "LikeshSanghvi", password: "ls_btl" }
+  { username: "LikeshSanghvi", password: "ls_btl" },
+  {username: "General123" ,password: "gen_123_temp"}
 ];
 
 // Handle Sign-In Form Submission
