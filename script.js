@@ -67,12 +67,25 @@ function sendMessage() {
   chatBox.scrollTop = chatBox.scrollHeight;
 
   generateBotResponse(userInput).then(botReply => {
-    chatBox.innerHTML = chatBox.innerHTML.replace('<div class="message bot"><div class="loading"></div></div>', `<div class="message bot">${botReply}</div>`);
+    chatBox.innerHTML = chatBox.innerHTML.replace('<div class="message bot"><div class="loading"></div></div>', `<div class="message bot">${formatBotResponse(botReply)}</div>`
+);
   });
 }
 
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
+
+function formatBotResponse(text) {
+  // Escape HTML characters for safety
+  const escaped = text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  // Convert line breaks to <br> and preserve spaces
+  return escaped.replace(/\n/g, "<br>").replace(/ {2}/g, "&nbsp;&nbsp;");
+}
+
 
 
