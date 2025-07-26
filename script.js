@@ -11,7 +11,7 @@ async function fetchApiKey() {
     
     // Store the API key
     let apiKey = data.apiKey;
-
+  console.log(apiKey);
     // Now you can safely use the API key
    
 
